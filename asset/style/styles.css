@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+body {
+  height: 100vh;
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+  margin: 1px;
+  padding: 0;
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "nav nav"
+    "section aside"
+    "footer footer";
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 10% 10% 70% 10%;
+}
+header {
+  grid-area: header;
+  background-color: #fd0bff;
+}
+nav {
+  grid-area: nav;
+  background-color: #02f400;
+}
+section {
+  grid-area: section;
+  background-color: #0042fd;
+}
+aside {
+  display: flex;
+  grid-area: aside;
+  background-color: #ff7f26;
+}
+footer {
+  grid-area: footer;
+  background-color: #006364;
+  text-align: center;
+}
+.card {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.card .price {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.card button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.resultados {
+  background-color: red;
+  height: 350px;
+  width: 230px;
+  text-align: center;
+}
+.color-circulo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+}

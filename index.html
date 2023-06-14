@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="asset/style/styles.css" />
+    <script src="script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>Pcfactory</header>
+    <!--  -->
+    <nav>
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Catalogo</a></li>
+            <li><a href="#">Ofertas</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+      </div></nav>
+    <!--  -->
+    <section>
+      <div class="orden">
+        <label for="cat">Ordenar por:</label>
+        <select name="categorias" id="categorias">
+          <!-- aplicar js xddddddddddddd -->
+          <option value="precio" selected>Precio</option>
+          <!-- preseleccionado por que puedo y por que quiero -->
+          <option value="dispositivo">dispositivo</option>
+          <option value="procesador">procesador</option>
+          <option value="ram">ram</option>
+        </select>
+      </div>
+    </section>
+    <!-- borrar filtros -->
+
+    <aside>
+      <div class="card">
+        <h2 class="card-title">Dell</h2>
+        <img src="/asset/img/pc.jpg" alt="computador dell" class="card-image" />
+        <input type="text" id="cantidadInput" placeholder="Cantidad">
+        <input type="text" id="colorInput" placeholder="Color">
+        <div class="precio">Precio $14990</div>
+        <button onclick="calcularTotal()">Calcular Total</button>
+        <!-- boton que al hacer click ejecuta el js -->
+      </div>
+      <div class="resultados" id="resultContainer">
+      </div>
+    </aside>
+
+    <!--computadores-->
+    <footer class="footer">
+      <div class="footer-icons">
+        <img src="/asset/img/face.png" alt="facebook" />
+        <img src="/asset/img/insta.png" alt="instagram" />
+      </div>
+      <div class="footer-text">Todos los derechos reservados</div>
+    </footer>
+    <!--  -->
+  </body>
+</html>
+<!-- aspecto visual no mejorado , es parte del front end jjaja saludos-->
