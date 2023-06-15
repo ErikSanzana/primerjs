@@ -1,3 +1,7 @@
+const botonCalcular = document.getElementById('calcularBtn');
+botonCalcular.addEventListener('click', function() {
+  calcularTotal();
+});
 function calcularTotal() {
   var cantidad = document.getElementById("cantidadInput").value;
   /* saca el valor de cantidad*/
